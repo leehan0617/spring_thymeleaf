@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>전자파 예측 Prototype</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <script th:src="@{/js/bootstrap.bundle.min.js}" defer></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <th:block th:replace="fragments/navbar :: navbar"></th:block>
+        <th:block layout:fragment="content"></th:block>
+        <th:block th:replace="fragments/footer :: footer"></th:block>
+    </div>
+</body>
+</html>

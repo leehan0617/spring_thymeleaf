@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.SampleMapper">
+    <select id="findAll" resultType="com.example.demo.model.Sample">
+        SELECT * FROM sample_table
+    </select>
+    <select id="findById" parameterType="int" resultType="com.example.demo.model.Sample">
+        SELECT * FROM sample_table WHERE id = #{id}
+    </select>
+    <insert id="insert" parameterType="com.example.demo.model.Sample">
+        INSERT INTO sample_table (name, use_flag, sample_number)
+        VALUES (#{name}, #{useFlag}, #{sampleNumber})
+    </insert>
+    <update id="update" parameterType="com.example.demo.model.Sample">
+        UPDATE sample_table SET name = #{name}, use_flag=#{useFlag}, sample_number=#{sampleNumber}
+        WHERE id = #{id}
+    </update>
+    <delete id="delete" parameterType="int">
+        DELETE FROM sample_table WHERE id = #{id}
+    </delete>
+</mapper>
