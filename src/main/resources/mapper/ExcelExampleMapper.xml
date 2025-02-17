@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.ExcelExampleMapper">
+    <select id="findAll" resultType="com.example.demo.model.ExcelExample">
+        SELECT * FROM excel_example
+    </select>
+
+    <insert id="insert" parameterType="com.example.demo.model.ExcelExample">
+        INSERT INTO excel_example
+        (name, email, age, address)
+        VALUES
+        (#{name}, #{email}, #{age}, #{address})
+    </insert>
+</mapper>

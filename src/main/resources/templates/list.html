@@ -9,6 +9,13 @@
 <body>
     <th:block layout:fragment="content">
         <p>목록 페이지</p>
+        <form method="post" action="/excel/upload-excel-example" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <p>엑셀 다운로드</p>
+        <a href="/excel/download-excel-example">Download</a>
     </th:block>
 </body>
 </html>
