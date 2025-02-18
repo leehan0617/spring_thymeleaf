@@ -8,23 +8,116 @@
 </head>
 <body>
     <th:block layout:fragment="content">
-        <button class="btn btn-success">click</button>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>1</th>
-                    <th>1</th>
-                    <th>1</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="d-inline-flex justify-content-center">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#searchForm" role="button">검색 조건</a>
+                </p>
+                <div class="collapse" id="searchForm">
+                    <div class="card card-body">
+                        <form>
+                            <div class="row mb-3">
+                                <label for="region1" class="col-sm-2 col-form-label">시도</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" id="region1">
+                                        <option value="">선택하세요</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="region2" class="col-sm-2 col-form-label">시군구</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" id="region2">
+                                        <option value="">선택하세요</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="region3" class="col-sm-2 col-form-label">읍면동</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" id="region3">
+                                        <option value="">선택하세요</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <p class="col-form-label col-sm-2 pt-0">전압</p>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="voltage" id="154kV" value="154" checked="checked">
+                                        <label class="form-check-label" for="154kV">154kV</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="voltage" id="345kV" value="345">
+                                        <label class="form-check-label" for="345kV">345kV</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="voltage" id="765kV" value="765">
+                                        <label class="form-check-label" for="765kV">765kV</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <p class="col-form-label col-sm-2 pt-0">시공 구분</p>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="construction" id="OVHD" value="가공" checked="checked">
+                                        <label class="form-check-label" for="OVHD">가공</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="construction" id="UG" value="지중">
+                                        <label class="form-check-label" for="UG">지중</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <p class="col-form-label col-sm-2 pt-0">관심/교육시설</p>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="facilities" id="HSPT" value="요양병원" checked="checked">
+                                        <label class="form-check-label" for="HSPT">요양병원</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="facilities" id="SCHL" value="학교">
+                                        <label class="form-check-label" for="SCHL">초.중.고등학교</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="facilities" id="CHILD" value="어린이집">
+                                        <label class="form-check-label" for="CHILD">어린이집</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="facilities" id="KNDR" value="유치원">
+                                        <label class="form-check-label" for="KNDR">유치원</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-form-label col-sm-2 pt-0" for="distance">관심/교육 이격거리</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" id="distance">
+                                        <option value="">선택하세요</option>
+                                        <option value="10">0-10m</option>
+                                        <option value="20">11-20m</option>
+                                        <option value="30">21-30m</option>
+                                        <option value="40">31-40m</option>
+                                        <option value="50">41-50m</option>
+                                        <option value="300">51-300m</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-primary">검색</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                지도 영역
+            </div>
+        </div>
     </th:block>
 </body>
 </html>
