@@ -57,7 +57,6 @@ public class ExcelService {
             Sheet sheet = workbook.getSheetAt(0);
             for (Row row : sheet) {
                 if (row.getRowNum() == 0) continue;
-
                 ExcelExample excelExample = new ExcelExample();
                 excelExample.setName(row.getCell(1).getStringCellValue());
                 excelExample.setEmail(row.getCell(2).getStringCellValue());
