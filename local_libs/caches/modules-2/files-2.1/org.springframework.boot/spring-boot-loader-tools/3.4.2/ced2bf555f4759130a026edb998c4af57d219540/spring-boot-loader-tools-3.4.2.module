@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-loader-tools",
+    "version": "3.4.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.25.0"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.4.2.jar",
+          "url": "spring-boot-loader-tools-3.4.2.jar",
+          "size": 464874,
+          "sha512": "5c9b484dc93b036df9dfbf8e8651b0218a57e042da29fa0f86328dbcfe710bb17c66072594c813b77331ae5a18017484b86512c930516ab353b93c58d744c52c",
+          "sha256": "6a94fe5506ecd94b20469903e8733ed1999dd64a4063999448c333f4da6528e0",
+          "sha1": "b7e5923c97f3deccb316ccb7627ff7f186b71c05",
+          "md5": "b9b9015b4577a68342d4dfd1ebee7aca"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.25.0"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.2.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.4.2.jar",
+          "url": "spring-boot-loader-tools-3.4.2.jar",
+          "size": 464874,
+          "sha512": "5c9b484dc93b036df9dfbf8e8651b0218a57e042da29fa0f86328dbcfe710bb17c66072594c813b77331ae5a18017484b86512c930516ab353b93c58d744c52c",
+          "sha256": "6a94fe5506ecd94b20469903e8733ed1999dd64a4063999448c333f4da6528e0",
+          "sha1": "b7e5923c97f3deccb316ccb7627ff7f186b71c05",
+          "md5": "b9b9015b4577a68342d4dfd1ebee7aca"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.4.2-javadoc.jar",
+          "url": "spring-boot-loader-tools-3.4.2-javadoc.jar",
+          "size": 250221,
+          "sha512": "fac6c4b26de240811f896e541869e2e5e7231e2fc1eb5c56f40b8c66f42e60e5a485e126c272e9453571eb2560313d24319721c78628fe60d752cf92c7a490ea",
+          "sha256": "55cd7526c8b6d6089e5900487875c1ac39bf18952ebb6c79bd295b095ebf7108",
+          "sha1": "c0ab66f3d19970011a3a54fa45f81d996a0e41d7",
+          "md5": "d4640e1d6942d7ca917e599f98397de2"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-loader-tools-3.4.2-sources.jar",
+          "url": "spring-boot-loader-tools-3.4.2-sources.jar",
+          "size": 75171,
+          "sha512": "fadd2f7082fdda4961c1109a261f20d8c678b357df5821bab1c5f5a313a3027754d146598ebbd55929ae53a9e6e27449139a129a07b392184f91f7e90abac01e",
+          "sha256": "6603c5e66518eae962b3c6f8ee0b98b9dc2d06cd48e99a0b9be215be9b826f0a",
+          "sha1": "ce47a694fe75ddebed66514b8da20ca5bc6d5568",
+          "md5": "962403b29f94518885c186348a3c1c54"
+        }
+      ]
+    }
+  ]
+}
